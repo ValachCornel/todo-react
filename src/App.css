@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Hanken+Grotesk:wght@0,300;0,400;0,700;1,300;1,400;1,700';
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Hanken Grotesk';
+}
+
+:root {
+  --bg-color: #001d3d;
+  --accent-color: #003566;
+  --text-color: #F3EFE0;
+  --button-color: #c59a0c;
+  --color-completed: #87c424;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: grid;
+  height: 100%;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  transition: 0.5s ease-in;
+  transition-property: height;
+}
+
+.completed {
+  background-color: var(--color-completed) !important;
+  transition: .5s ease-in;
+}
+
+.addContainer {
+  display: flex;
+  align-items: center;
+}
+
+.task {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: .5s ease-in;
+}
+
+.task h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.input {
+  margin: 0;
+  text-indent: 5px;
+
+  margin-right: 35px;
+  border-radius: 10px;
+  height: 35px;
+  width: 300px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+
+.button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 16px;
+}
